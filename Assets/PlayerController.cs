@@ -9,7 +9,6 @@ public class PlayerController : MonoBehaviour
     private Animator animator;
 
     public bool CanDash = true;
-    public bool CanUseBarrier = true;
 
     // Dash variables
     public float dashDistance = 2f;
@@ -46,7 +45,7 @@ public class PlayerController : MonoBehaviour
                 Dash();
             }
 
-            if (CanUseBarrier && Input.GetKeyDown(barrierKey))
+            if (PlayerAttributes.CanUseBarrier && Input.GetKeyDown(barrierKey))
             {
                 UseBarrier();
             }
@@ -113,13 +112,13 @@ public class PlayerController : MonoBehaviour
         Destroy(barrier);
 
         // Disable the ability for a short duration (barrierCooldown)
-        CanUseBarrier = false;
+        PlayerAttributes.CanUseBarrier = false;
         Debug.Log("Barrier cooldown, speed after cooldown: " + rb.velocity.magnitude);
 
         yield return new WaitForSeconds(barrierCooldown);
 
         // Reset the barrier ability after the cooldown
-        CanUseBarrier = true;
+        PlayerAttributes.CanUseBarrier = true;
     }
 
     private void PreventPlayerOffScreen()
