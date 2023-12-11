@@ -43,7 +43,7 @@ public class MainMenu : MonoBehaviour
     }
     public void ChallengePlay()
     {
-        if(PlayerAttributes.stage1 == true & PlayerAttributes.stage2 == true & PlayerAttributes.stage3 == true)
+        if(PlayerAttributes.stage1 == true )
         SceneManager.LoadScene(Challenge);
     }
 
