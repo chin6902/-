@@ -22,6 +22,7 @@ public class PlayerController2 : MonoBehaviour
         movementDirection.y = Input.GetAxisRaw("Vertical");
         animator.SetFloat("Horizontal", movementDirection.x);
         animator.SetFloat("Vertical", movementDirection.y);
+        animator.SetFloat("Speed", speed);
     }
 
     void FixedUpdate()
