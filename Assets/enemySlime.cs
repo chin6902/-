@@ -50,10 +50,7 @@ public class enemySlime : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             // Debug log to verify item pickup
-            Debug.Log("Item picked up!");
-
-            // Destroy the item
-            Destroy(gameObject);
+            Debug.Log("Enemy");
 
             // Load the next scene
             SceneManager.LoadScene(scenename);
