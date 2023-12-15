@@ -918,6 +918,14 @@ PrefabInstance:
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6973467120193854388, guid: e80fdd16b1798f4498facac322051e4b, type: 3}
+      propertyPath: dashKey
+      value: 113
+      objectReference: {fileID: 0}
+    - target: {fileID: 6973467120193854388, guid: e80fdd16b1798f4498facac322051e4b, type: 3}
+      propertyPath: barrierKey
+      value: 101
+      objectReference: {fileID: 0}
+    - target: {fileID: 6973467120193854388, guid: e80fdd16b1798f4498facac322051e4b, type: 3}
       propertyPath: barrierDuration
       value: 3
       objectReference: {fileID: 0}
