@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 18526e7a286f7e746a057f5d1e5480d4
+guid: cf484d631c0a1894eafdd3da207c2884
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -21,11 +21,13 @@ ScriptedImporter:
     convertToNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
     isReadable: 0
     streamingMipmaps: 0
     streamingMipmapsPriority: 0
     vTOnly: 0
-    ignoreMasterTextureLimit: 0
+    ignoreMipmapLimit: 0
     nPOTScale: 1
     sRGBTexture: 1
     spriteMode: 2
@@ -33,7 +35,7 @@ ScriptedImporter:
     spriteMeshType: 1
     alignment: 0
     spritePivot: {x: 0.5, y: 0.5}
-    spritePixelsToUnits: 80
+    spritePixelsToUnits: 100
     spriteBorder: {x: 0, y: 0, z: 0, w: 0}
     spriteGenerateFallbackPhysicsShape: 0
     generateCubemap: 6
@@ -95,7 +97,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638370368527697203
+  platformSettingsDirtyTick: 0
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -130,7 +132,7 @@ ScriptedImporter:
       y: 4
       width: 102
       height: 115
-    spriteID: 262d82548e052c943be3b5ec246c1bf5
+    spriteID: 3b7a9522cdec59243abd5b1ec8e7cb71
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -150,7 +152,7 @@ ScriptedImporter:
       y: 127
       width: 102
       height: 115
-    spriteID: a171b5a6bd99a2348940e846612e0227
+    spriteID: 45b1b557dd8ad8c42b7d81851334cb22
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -170,7 +172,7 @@ ScriptedImporter:
       y: 250
       width: 102
       height: 115
-    spriteID: a8f4874a24c4e2a4aabfe8f2854cbd8f
+    spriteID: 57a5f98a20121fd4f93d9d5232971f43
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -190,7 +192,7 @@ ScriptedImporter:
       y: 373
       width: 102
       height: 115
-    spriteID: 6872fac628696e943af8f7e6047476ac
+    spriteID: 287dd9f5e5103a34680e54532230101f
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -210,7 +212,7 @@ ScriptedImporter:
       y: 4
       width: 102
       height: 115
-    spriteID: 2d40e705c30a1cf4e88f922ef09e9f86
+    spriteID: 3d7938fe377140443a89e75e531c3954
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -230,7 +232,7 @@ ScriptedImporter:
       y: 127
       width: 102
       height: 115
-    spriteID: bc79f421b37616c4ba1864ef1af3b1a6
+    spriteID: 998e7241a5c1a064d8fefb1d202ad621
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -250,7 +252,7 @@ ScriptedImporter:
       y: 250
       width: 102
       height: 115
-    spriteID: 8296fcbbac8c1054183e2217e3072074
+    spriteID: 76c3675f8cea3094d838db132f3d8a05
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -270,7 +272,7 @@ ScriptedImporter:
       y: 373
       width: 102
       height: 115
-    spriteID: 8620399b5db443e41a43aa45874b44a1
+    spriteID: 549fb0a084c80444d8b54395e035d4e6
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -290,7 +292,7 @@ ScriptedImporter:
       y: 4
       width: 102
       height: 115
-    spriteID: 31ccb88c4b21a8742b6c2666a5609d27
+    spriteID: 1a619235956ba0244970fa0a415c6a0f
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -310,7 +312,7 @@ ScriptedImporter:
       y: 127
       width: 102
       height: 115
-    spriteID: 4d2f97e456a3cec45b4be5387dea0f2e
+    spriteID: 91961ee2de6714b41948a98a073b131a
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -335,7 +337,7 @@ ScriptedImporter:
         y: 0
         width: 102
         height: 115
-      spriteId: 262d82548e052c943be3b5ec246c1bf5
+      spriteId: 3b7a9522cdec59243abd5b1ec8e7cb71
     - name: spaceman_front_Frame_1
       frameIndex: 1
       cellRect:
@@ -343,7 +345,7 @@ ScriptedImporter:
         y: 1
         width: 102
         height: 115
-      spriteId: a171b5a6bd99a2348940e846612e0227
+      spriteId: 45b1b557dd8ad8c42b7d81851334cb22
     - name: spaceman_front_Frame_2
       frameIndex: 2
       cellRect:
@@ -351,7 +353,7 @@ ScriptedImporter:
         y: 2
         width: 102
         height: 115
-      spriteId: a8f4874a24c4e2a4aabfe8f2854cbd8f
+      spriteId: 57a5f98a20121fd4f93d9d5232971f43
     - name: spaceman_front_Frame_3
       frameIndex: 3
       cellRect:
@@ -359,7 +361,7 @@ ScriptedImporter:
         y: 3
         width: 102
         height: 115
-      spriteId: 6872fac628696e943af8f7e6047476ac
+      spriteId: 287dd9f5e5103a34680e54532230101f
     - name: spaceman_front_Frame_4
       frameIndex: 4
       cellRect:
@@ -367,7 +369,7 @@ ScriptedImporter:
         y: 4
         width: 102
         height: 115
-      spriteId: 2d40e705c30a1cf4e88f922ef09e9f86
+      spriteId: 3d7938fe377140443a89e75e531c3954
     - name: spaceman_front_Frame_5
       frameIndex: 5
       cellRect:
@@ -375,7 +377,7 @@ ScriptedImporter:
         y: 5
         width: 102
         height: 115
-      spriteId: bc79f421b37616c4ba1864ef1af3b1a6
+      spriteId: 998e7241a5c1a064d8fefb1d202ad621
     - name: spaceman_front_Frame_6
       frameIndex: 6
       cellRect:
@@ -383,7 +385,7 @@ ScriptedImporter:
         y: 4
         width: 102
         height: 115
-      spriteId: 8296fcbbac8c1054183e2217e3072074
+      spriteId: 76c3675f8cea3094d838db132f3d8a05
     - name: spaceman_front_Frame_7
       frameIndex: 7
       cellRect:
@@ -391,7 +393,7 @@ ScriptedImporter:
         y: 3
         width: 102
         height: 115
-      spriteId: 8620399b5db443e41a43aa45874b44a1
+      spriteId: 549fb0a084c80444d8b54395e035d4e6
     - name: spaceman_front_Frame_8
       frameIndex: 8
       cellRect:
@@ -399,7 +401,7 @@ ScriptedImporter:
         y: 2
         width: 102
         height: 115
-      spriteId: 31ccb88c4b21a8742b6c2666a5609d27
+      spriteId: 1a619235956ba0244970fa0a415c6a0f
     - name: spaceman_front_Frame_9
       frameIndex: 9
       cellRect:
@@ -407,54 +409,10 @@ ScriptedImporter:
         y: 1
         width: 102
         height: 115
-      spriteId: 4d2f97e456a3cec45b4be5387dea0f2e
+      spriteId: 91961ee2de6714b41948a98a073b131a
     linkedCells: []
     parentIndex: -1
-  platformSettings:
-  - name: DefaultTexturePlatform
-    overridden: 0
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    androidETC2FallbackOverride: 0
-  - name: Standalone
-    overridden: 0
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    androidETC2FallbackOverride: 0
-  - name: Server
-    overridden: 0
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    androidETC2FallbackOverride: 0
-  - name: WebGL
-    overridden: 0
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    androidETC2FallbackOverride: 0
+  platformSettings: []
   generatePhysicsShape: 0
   secondarySpriteTextures: []
   spritePackingTag: 
