@@ -167,7 +167,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 919547a37fb8ae142947a2dbc477c909, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnRate: 5
+  spawnRate: 10
   asteroidPrefabs:
   - {fileID: 2341738907488778963, guid: 0efbc770e46872b49b10709f31b4d459, type: 3}
   canSpawn: 1
@@ -912,6 +912,10 @@ PrefabInstance:
     - target: {fileID: 4896990380944863742, guid: e80fdd16b1798f4498facac322051e4b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6973467120193854388, guid: e80fdd16b1798f4498facac322051e4b, type: 3}
+      propertyPath: speed
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6973467120193854388, guid: e80fdd16b1798f4498facac322051e4b, type: 3}
       propertyPath: barrierDuration
