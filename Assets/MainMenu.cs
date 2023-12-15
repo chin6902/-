@@ -10,11 +10,17 @@ public class MainMenu : MonoBehaviour
     public string Stage_3;
     public string Challenge;
     public string StageSelect;
+    public string control;
 
 
     public void Mainmenu()
     {
         SceneManager.LoadScene(1);
+    }
+
+    public void Control()
+    {
+        SceneManager.LoadSceneAsync(control);
     }
     public void Stage()
     {
