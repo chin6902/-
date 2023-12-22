@@ -21,8 +21,8 @@ public class PlayerController3 : MonoBehaviour
         // “ü—Í’l‚É-1‚ğæ‚¶‚Ä”½“]
         movementDirection.x = -Input.GetAxisRaw("Horizontal");
         movementDirection.y = -Input.GetAxisRaw("Vertical");
-        // animator.SetFloat("Horizontal", movementDirection.x);
-        // animator.SetFloat("Vertical", movementDirection.y);
+        animator.SetFloat("Horizontal", movementDirection.x);
+        animator.SetFloat("Vertical", movementDirection.y);
     }
 
     void FixedUpdate()
