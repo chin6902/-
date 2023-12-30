@@ -10,6 +10,8 @@ public class PlayerController : MonoBehaviour
 
     public bool CanDash = true;
 
+    public KeyCode speedkey = KeyCode.F;
+
     // Dash variables
     public float dashDistance = 2f;
     public KeyCode dashKey = KeyCode.LeftShift;
@@ -49,6 +51,11 @@ public class PlayerController : MonoBehaviour
             {
                 UseBarrier();
             }
+
+            if (PlayerAttributes.CanSpeedUp)
+            {
+                SpeedUp();
+            }
         }
     }
 
@@ -68,6 +75,11 @@ public class PlayerController : MonoBehaviour
 
             // Disable the ability for a short duration (dashCooldown)
             StartCoroutine(DisableDash());
+    }
+
+    void SpeedUp()
+    {
+        speed = 4;
     }
 
     void UseBarrier()

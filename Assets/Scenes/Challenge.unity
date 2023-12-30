@@ -1167,7 +1167,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6973467120193854388, guid: e80fdd16b1798f4498facac322051e4b, type: 3}
       propertyPath: speed
-      value: 4
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6973467120193854388, guid: e80fdd16b1798f4498facac322051e4b, type: 3}
       propertyPath: dashKey
