@@ -8,7 +8,7 @@ public class PlayerController : MonoBehaviour
     private Vector2 movementDirection;
     private Animator animator;
 
-    public bool CanDash = true;
+    public static bool CanDash = true;
 
     public KeyCode speedkey = KeyCode.F;
 
@@ -118,7 +118,7 @@ public class PlayerController : MonoBehaviour
     {
         Debug.Log("Barrier activated, current speed: " + rb.velocity.magnitude);
 
-        yield return new WaitForSeconds(barrierCooldown);
+        yield return new WaitForSeconds(barrierDuration);
 
         // Destroy the barrier object after the cooldown
         Destroy(barrier);
