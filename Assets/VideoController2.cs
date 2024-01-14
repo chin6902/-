@@ -6,6 +6,7 @@ public class VideoController2 : MonoBehaviour
 {
     public VideoPlayer videoPlayer;
     public Button myButton;
+    public Button myButton2;
 
     void Start()
     {
@@ -16,5 +17,6 @@ public class VideoController2 : MonoBehaviour
     {
         // 動画終了時の処理
         myButton.gameObject.SetActive(true); // ボタンをアクティブにする
+        myButton2.gameObject.SetActive(true); // ボタンをアクティブにする
     }
 }
