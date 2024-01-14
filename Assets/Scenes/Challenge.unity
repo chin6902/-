@@ -1602,7 +1602,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8dd54701deebd9544831f9114439c18a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  survivalTime: 30
+  survivalTime: 1
   countdownText: {fileID: 1982244422}
   countdownTime: 30
 --- !u!1 &1531526045

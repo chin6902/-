@@ -237,5 +237,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3447692f078d8ad4fb1eeef838bb7ece, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scenename: GameOver
+  scenename: ending2
   moveSpeed: 5

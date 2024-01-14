@@ -55,6 +55,6 @@ public class GameClear : MonoBehaviour
 
     void LoadGameClearScene()
     {
-        SceneManager.LoadScene("GameClear"); // Replace "GameClearSceneName" with the actual name of your game clear scene
+        SceneManager.LoadScene("ending1"); // Replace "GameClearSceneName" with the actual name of your game clear scene
     }
 }
