@@ -45,7 +45,7 @@ public class enemySlime : MonoBehaviour
 
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
+    /*private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
@@ -55,5 +55,5 @@ public class enemySlime : MonoBehaviour
             // Load the next scene
             SceneManager.LoadScene(scenename);
         }
-    }
+    }*/
 }
