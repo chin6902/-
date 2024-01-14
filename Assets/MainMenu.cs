@@ -11,12 +11,19 @@ public class MainMenu : MonoBehaviour
     public string Challenge;
     public string StageSelect;
     public string control;
+    public string opening;
 
 
     public void Mainmenu()
     {
         SceneManager.LoadScene(1);
     }
+
+    public void Opening()
+    {
+        SceneManager.LoadSceneAsync(opening);
+    }
+
 
     public void Control()
     {

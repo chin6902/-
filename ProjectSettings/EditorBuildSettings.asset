@@ -33,9 +33,15 @@ EditorBuildSettings:
     path: Assets/Scenes/Challenge.unity
     guid: 3d1c0d576feecc14aa39d51d6f378d74
   - enabled: 1
+    path: Assets/Scenes/ending1.unity
+    guid: 7323f643fd42d654fa0fb8ff9522973d
+  - enabled: 1
+    path: Assets/Scenes/ending2.unity
+    guid: 57fd4eb950d510a4e95493b60091e06a
+  - enabled: 0
     path: Assets/Scenes/GameOver.unity
     guid: 86d0fb38c151e9a46861d84bbf4a2cb6
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/GameClear.unity
     guid: 46634eec221f2c44398a36366ccbdaf0
   m_configObjects: {}
