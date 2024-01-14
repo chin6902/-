@@ -1,12 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
-public class enemySlime : MonoBehaviour
+public class enemyslime2 : MonoBehaviour
 {
     public float moveSpeed = 2f; // Speed at which the slime moves
-    private bool moveRight = true; // Determines the initial direction
+    private bool moveUp = true; // Determines the initial direction
 
     private Animator animator; // Reference to the Animator component
 
@@ -20,26 +19,25 @@ public class enemySlime : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // Move the slime horizontally
-        if (moveRight)
+        if (moveUp)
         {
-            transform.Translate(Vector2.right * moveSpeed * Time.deltaTime);
-            animator.SetFloat("Horizontal", 1);
+            transform.Translate(Vector2.up * moveSpeed * Time.deltaTime);
+            animator.SetFloat("Vertical", 0);
         }
         else
         {
-            transform.Translate(Vector2.left * moveSpeed * Time.deltaTime);
-            animator.SetFloat("Horizontal", 0);
+            transform.Translate(Vector2.down * moveSpeed * Time.deltaTime);
+            animator.SetFloat("Vertical", 1);
         }
 
         // Check if the slime should change direction
-        if (transform.position.x > 5f)
+        if (transform.position.y > 20f)
         {
-            moveRight = false;
+            moveUp = false;
         }
-        else if (transform.position.x < -5f)
+        else if (transform.position.y < -3f)
         {
-            moveRight = true;
+            moveUp = true;
         }
 
     }

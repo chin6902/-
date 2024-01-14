@@ -7,6 +7,7 @@ public class PlayerController2 : MonoBehaviour
     private Rigidbody2D rb;
     private Vector2 movementDirection;
     private Animator animator;
+    public Vector2 startingPosition;
 
     public float speed = 2f;
 
@@ -14,6 +15,7 @@ public class PlayerController2 : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        startingPosition = transform.position;
     }
 
     void Update()
