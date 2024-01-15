@@ -31,6 +31,7 @@ public class BGMManager : MonoBehaviour
     public AudioSource C_BGM;
     public AudioSource D_BGM;
     public AudioSource E_BGM;
+    public AudioSource F_BGM;
 
     private string beforeScene;//string型の変数beforeSceneを宣言 
 
@@ -69,11 +70,12 @@ public class BGMManager : MonoBehaviour
             D_BGM.Play();
         }
 
-        if (beforeScene == "Stage1" && nextScene.name == "MainMenu")
+        if (beforeScene == "Stage1" && nextScene.name == "skill1")
         {
             B_BGM.Stop();
-            A_BGM.Play();
+            F_BGM.Play();
         }
+
 
         if (beforeScene == "Stage2" && nextScene.name == "MainMenu")
         {
@@ -111,6 +113,20 @@ public class BGMManager : MonoBehaviour
             A_BGM.Play();
         }
 
+        if (beforeScene == "skill1" && nextScene.name == "MainMenu")
+        {
+            A_BGM.Play();
+        }
+
+        if (beforeScene == "skill2" && nextScene.name == "MainMenu")
+        {
+            A_BGM.Play();
+        }
+
+        if (beforeScene == "skill3" && nextScene.name == "MainMenu")
+        {
+            A_BGM.Play();
+        }
 
         //遷移後のシーン名を「１つ前のシーン名」として保持
         beforeScene = nextScene.name;
