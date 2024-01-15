@@ -19,7 +19,7 @@ public class DashSkill : MonoBehaviour
             PlayerAttributes.stage1 = true;
 
             // Load the next scene
-            SceneManager.LoadSceneAsync(1);
+            SceneManager.LoadSceneAsync("skill1");
         }
     }
 
