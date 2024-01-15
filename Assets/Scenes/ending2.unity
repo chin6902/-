@@ -275,7 +275,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 344802808}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
-        m_MethodName: ChallengePlay
+        m_MethodName: Challenge
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -423,10 +423,14 @@ MonoBehaviour:
   Stage_1: Stage1
   Stage_2: Stage2
   Stage_3: Stage3
-  Challenge: Challenge
+  challenge: Challenge
   StageSelect: StageSelect
   control: 
   opening: 
+  Rule_1: 
+  Rule_2: 
+  Rule_3: 
+  Rule_4: 
 --- !u!114 &344802809
 MonoBehaviour:
   m_ObjectHideFlags: 0

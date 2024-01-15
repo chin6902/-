@@ -478,7 +478,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1307793876}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
-        m_MethodName: Stage3
+        m_MethodName: Rule3
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -910,7 +910,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1307793876}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
-        m_MethodName: Stage1
+        m_MethodName: Rule1
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1045,7 +1045,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1307793876}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
-        m_MethodName: Stage2
+        m_MethodName: Rule2
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1238,6 +1238,9 @@ MonoBehaviour:
   StageSelect: StageSelect
   control: control
   opening: opening
+  Rule_1: rule1
+  Rule_2: rule2
+  Rule_3: rule3
 --- !u!1 &1538632858
 GameObject:
   m_ObjectHideFlags: 0
