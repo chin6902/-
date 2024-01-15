@@ -276,7 +276,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 344802808}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
-        m_MethodName: ChallengePlay
+        m_MethodName: Rule_4Play
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -433,10 +433,14 @@ MonoBehaviour:
   Stage_1: Stage1
   Stage_2: Stage2
   Stage_3: Stage3
-  Challenge: Challenge
+  challenge: 
   StageSelect: StageSelect
   control: control
   opening: 
+  Rule_1: 
+  Rule_2: 
+  Rule_3: 
+  Rule_4: Challengerule
 --- !u!82 &344802809
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1294,7 +1298,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 8fe542a2a3a1e0a4897f7cc7db75b9ef, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.01
+  m_Volume: 0.05
   m_Pitch: 1
   Loop: 1
   Mute: 0

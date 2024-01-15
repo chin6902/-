@@ -48,6 +48,9 @@ EditorBuildSettings:
     path: Assets/Scenes/skill3.unity
     guid: 2ffc7b67e7d4d9a44a5d1ea3b423a2df
   - enabled: 1
+    path: Assets/Scenes/Challengerule.unity
+    guid: 33b11cef0fa77d9459bb3c366fee7731
+  - enabled: 1
     path: Assets/Scenes/Challenge.unity
     guid: 3d1c0d576feecc14aa39d51d6f378d74
   - enabled: 1

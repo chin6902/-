@@ -51,20 +51,20 @@ public class BGMManager : MonoBehaviour
     void OnActiveSceneChanged(Scene prevScene, Scene nextScene)
     {
         //ÉVÅ[ÉìÇ™Ç«Ç§ïœÇÌÇ¡ÇΩÇ©Ç≈îªíË
-        if (beforeScene == "StageSelect" && nextScene.name == "Stage1")
+        if (beforeScene == "StageSelect" && nextScene.name == "rule1")
         {
             A_BGM.Stop();
             B_BGM.Play();
         }
 
         // Scene1Ç©ÇÁScene2Ç÷
-        if (beforeScene == "StageSelect" && nextScene.name == "Stage2")
+        if (beforeScene == "StageSelect" && nextScene.name == "rule2")
         {
             A_BGM.Stop();
             C_BGM.Play();
         }
 
-        if (beforeScene == "StageSelect" && nextScene.name == "stage3")
+        if (beforeScene == "StageSelect" && nextScene.name == "rule3")
         {
             A_BGM.Stop();
             D_BGM.Play();
@@ -74,6 +74,25 @@ public class BGMManager : MonoBehaviour
         {
             B_BGM.Stop();
             F_BGM.Play();
+        }
+
+
+        if (beforeScene == "Stage2" && nextScene.name == "skill2")
+        {
+            C_BGM.Stop();
+            F_BGM.Play();
+        }
+
+        if (beforeScene == "stage3" && nextScene.name == "skill3")
+        {
+            D_BGM.Stop();
+            F_BGM.Play();
+        }
+
+        if (beforeScene == "Stage1" && nextScene.name == "MainMenu")
+        {
+            B_BGM.Stop();
+            A_BGM.Play();
         }
 
 
@@ -89,7 +108,7 @@ public class BGMManager : MonoBehaviour
             A_BGM.Play();
         }
 
-        if (beforeScene == "MainMenu" && nextScene.name == "Challenge")
+        if (beforeScene == "MainMenu" && nextScene.name == "Challengerule")
         {
             A_BGM.Stop();
             E_BGM.Play();
