@@ -136,16 +136,20 @@ public class PlayerController : MonoBehaviour
     private void PreventPlayerOffScreen()
     {
         Vector2 screenPosition = _camera.WorldToScreenPoint(transform.position);
-        if((screenPosition.x < 0 && rb.velocity.x < 0) || (screenPosition.x > _camera.pixelWidth && rb.velocity.x > 0))
+
+        // 使用するべきなのは _camera.pixelHeight です
+        if ((screenPosition.x < 0 && rb.velocity.x < 0) || (screenPosition.x > _camera.pixelWidth && rb.velocity.x > 0))
         {
             rb.velocity = new Vector2(0, rb.velocity.y);
         }
 
-        if ((screenPosition.y < 0 && rb.velocity.y < 0) || (screenPosition.y > _camera.pixelWidth && rb.velocity.y > 0))
+        // 同様にこちらも修正が必要です
+        if ((screenPosition.y < 0 && rb.velocity.y < 0) || (screenPosition.y > _camera.pixelHeight && rb.velocity.y > 0))
         {
-            rb.velocity = new Vector2(rb.velocity.y, 0);
+            rb.velocity = new Vector2(rb.velocity.x, 0);
         }
     }
+
 
 }
 
