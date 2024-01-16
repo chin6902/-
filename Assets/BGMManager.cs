@@ -120,15 +120,22 @@ public class BGMManager : MonoBehaviour
             A_BGM.Play();
         }
 
-        if (beforeScene == "ending1" && nextScene.name == "MainMenu")
+        if (beforeScene == "Challenge" && nextScene.name == "ending1")
         {
             E_BGM.Stop();
+        }
+        if (beforeScene == "Challenge" && nextScene.name == "ending2")
+        {
+            E_BGM.Stop();
+        }
+
+        if (beforeScene == "ending1" && nextScene.name == "MainMenu")
+        {
             A_BGM.Play();
         }
 
         if (beforeScene == "ending2" && nextScene.name == "MainMenu")
         {
-            E_BGM.Stop();
             A_BGM.Play();
         }
 

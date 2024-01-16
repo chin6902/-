@@ -30,6 +30,9 @@ public class PlayerController : MonoBehaviour
     // Speed variable
     public float speed = 2f;
 
+    public AudioSource dashsound;
+    public AudioSource barriersound;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -45,11 +48,13 @@ public class PlayerController : MonoBehaviour
             if (CanDash && Input.GetKeyDown(dashKey))
             {
                 Dash();
+                dashsound.Play();
             }
 
             if (PlayerAttributes.CanUseBarrier && Input.GetKeyDown(barrierKey))
             {
                 UseBarrier();
+                barriersound.Play();
             }
 
             if (PlayerAttributes.CanSpeedUp)
