@@ -10,6 +10,4 @@ public class PlayerAttributes : MonoBehaviour
     public static bool stage1 = false;
     public static bool stage2 = false;
     public static bool stage3 = false;
-    public static bool CanUseBarrier = false;
-    public static bool CanSpeedUp = false;
 }

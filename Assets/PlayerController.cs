@@ -8,7 +8,9 @@ public class PlayerController : MonoBehaviour
     private Vector2 movementDirection;
     private Animator animator;
 
-    public static bool CanDash = true;
+    public bool CanDash = true;
+    public bool CanUseBarrier = false;
+    public bool CanSpeedUp = false;
 
     public KeyCode speedkey = KeyCode.F;
 
@@ -35,6 +37,7 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         _camera = Camera.main;
+        SceneManager.sceneLoaded += OnSceneLoaded;
     }
 
     void Update()
@@ -47,12 +50,12 @@ public class PlayerController : MonoBehaviour
                 Dash();
             }
 
-            if (PlayerAttributes.CanUseBarrier && Input.GetKeyDown(barrierKey))
+            if (CanUseBarrier && Input.GetKeyDown(barrierKey))
             {
                 UseBarrier();
             }
 
-            if (PlayerAttributes.CanSpeedUp)
+            if (CanSpeedUp)
             {
                 SpeedUp();
             }
@@ -64,6 +67,53 @@ public class PlayerController : MonoBehaviour
         rb.velocity = movementDirection.normalized * speed;
         PreventPlayerOffScreen();
     }
+
+    private void OnEnable()
+    {
+        // Subscribe to the sceneLoaded event
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    private void OnDisable()
+    {
+        // Unsubscribe from the sceneLoaded event to prevent memory leaks
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
+
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        // Reset abilities to default values
+        CanDash = false;
+        CanUseBarrier = false;
+        CanSpeedUp = false;
+
+        // Check if the current scene is the challenge scene
+        if (scene.name == "Challenge")
+        {
+            // Check the current conditions and set abilities accordingly
+            if (PlayerAttributes.stage1 == true)
+            {
+                CanDash = true;
+            }
+            if (PlayerAttributes.stage2 == true)
+            {
+                CanUseBarrier = true;
+            }
+            else
+            {
+                CanUseBarrier = false;
+            }
+            if (PlayerAttributes.stage3 == true)
+            {
+                CanSpeedUp = true;
+            }
+            else
+            {
+                CanSpeedUp = false;
+            }
+        }
+    }
+
 
     void Dash()
     {
@@ -124,29 +174,49 @@ public class PlayerController : MonoBehaviour
         Destroy(barrier);
 
         // Disable the ability for a short duration (barrierCooldown)
-        PlayerAttributes.CanUseBarrier = false;
+        CanUseBarrier = false;
         Debug.Log("Barrier cooldown, speed after cooldown: " + rb.velocity.magnitude);
 
         yield return new WaitForSeconds(barrierCooldown);
 
         // Reset the barrier ability after the cooldown
-        PlayerAttributes.CanUseBarrier = true;
+        CanUseBarrier = true;
     }
 
     private void PreventPlayerOffScreen()
     {
+        if (_camera == null)
+        {
+            // Camera has been destroyed, handle this case appropriately
+            return;
+        }
+
         Vector2 screenPosition = _camera.WorldToScreenPoint(transform.position);
+<<<<<<< Updated upstream
         if((screenPosition.x < 0 && rb.velocity.x < 0) || (screenPosition.x > _camera.pixelWidth && rb.velocity.x > 0))
+=======
+
+        if ((screenPosition.x < 0 && rb.velocity.x < 0) || (screenPosition.x > _camera.pixelWidth && rb.velocity.x > 0))
+>>>>>>> Stashed changes
         {
             rb.velocity = new Vector2(0, rb.velocity.y);
         }
 
+<<<<<<< Updated upstream
         if ((screenPosition.y < 0 && rb.velocity.y < 0) || (screenPosition.y > _camera.pixelWidth && rb.velocity.y > 0))
+=======
+        if ((screenPosition.y < 0 && rb.velocity.y < 0) || (screenPosition.y > _camera.pixelHeight && rb.velocity.y > 0))
+>>>>>>> Stashed changes
         {
             rb.velocity = new Vector2(rb.velocity.y, 0);
         }
     }
 
+<<<<<<< Updated upstream
+=======
+
+
+>>>>>>> Stashed changes
 }
 
 public class BarrierScript : MonoBehaviour
