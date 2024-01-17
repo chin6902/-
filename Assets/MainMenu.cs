@@ -8,10 +8,14 @@ public class MainMenu : MonoBehaviour
     public string Stage_1;
     public string Stage_2;
     public string Stage_3;
-    public string Challenge;
+    public string challenge;
     public string StageSelect;
     public string control;
     public string opening;
+    public string Rule_1;
+    public string Rule_2;
+    public string Rule_3;
+    public string Rule_4;
 
 
     public void Mainmenu()
@@ -54,10 +58,31 @@ public class MainMenu : MonoBehaviour
             SceneManager.LoadScene(Stage_3);
         }
     }
-    public void ChallengePlay()
+
+    public void Rule1()
+    {
+        SceneManager.LoadScene(Rule_1);
+    }
+
+    public void Rule2()
+    {
+        SceneManager.LoadScene(Rule_2);
+    }
+
+    public void Rule3()
+    {
+        SceneManager.LoadScene(Rule_3);
+    }
+
+    public void Challenge()
+    {
+        SceneManager.LoadScene(challenge);
+    }
+
+    public void Rule_4Play()
     {
         if(PlayerAttributes.stage1 == true )
-        SceneManager.LoadScene(Challenge);
+        SceneManager.LoadScene(Rule_4);
     }
 
     

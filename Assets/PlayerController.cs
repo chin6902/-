@@ -32,6 +32,9 @@ public class PlayerController : MonoBehaviour
     // Speed variable
     public float speed = 2f;
 
+    public AudioSource dashsound;
+    public AudioSource barriersound;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -48,11 +51,13 @@ public class PlayerController : MonoBehaviour
             if (CanDash && Input.GetKeyDown(dashKey))
             {
                 Dash();
+                dashsound.Play();
             }
 
             if (CanUseBarrier && Input.GetKeyDown(barrierKey))
             {
                 UseBarrier();
+                barriersound.Play();
             }
 
             if (CanSpeedUp)
@@ -192,31 +197,20 @@ public class PlayerController : MonoBehaviour
         }
 
         Vector2 screenPosition = _camera.WorldToScreenPoint(transform.position);
-<<<<<<< Updated upstream
-        if((screenPosition.x < 0 && rb.velocity.x < 0) || (screenPosition.x > _camera.pixelWidth && rb.velocity.x > 0))
-=======
-
+        // 使用するべきなのは _camera.pixelHeight です
         if ((screenPosition.x < 0 && rb.velocity.x < 0) || (screenPosition.x > _camera.pixelWidth && rb.velocity.x > 0))
->>>>>>> Stashed changes
         {
             rb.velocity = new Vector2(0, rb.velocity.y);
         }
 
-<<<<<<< Updated upstream
-        if ((screenPosition.y < 0 && rb.velocity.y < 0) || (screenPosition.y > _camera.pixelWidth && rb.velocity.y > 0))
-=======
+        // 同様にこちらも修正が必要です
         if ((screenPosition.y < 0 && rb.velocity.y < 0) || (screenPosition.y > _camera.pixelHeight && rb.velocity.y > 0))
->>>>>>> Stashed changes
         {
-            rb.velocity = new Vector2(rb.velocity.y, 0);
+            rb.velocity = new Vector2(rb.velocity.x, 0);
         }
     }
 
-<<<<<<< Updated upstream
-=======
 
-
->>>>>>> Stashed changes
 }
 
 public class BarrierScript : MonoBehaviour

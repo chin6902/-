@@ -20,7 +20,7 @@ public class BarrierItem : MonoBehaviour
 
 
             // Load the next scene
-            SceneManager.LoadSceneAsync(1);
+            SceneManager.LoadSceneAsync("skill2");
         }
     }
 
