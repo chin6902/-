@@ -139,6 +139,12 @@ public class BGMManager : MonoBehaviour
             A_BGM.Play();
         }
 
+        if (beforeScene == "ending2" && nextScene.name == "Challenge")
+        {
+            E_BGM.Play();
+        }
+
+
         if (beforeScene == "skill1" && nextScene.name == "MainMenu")
         {
             A_BGM.Play();

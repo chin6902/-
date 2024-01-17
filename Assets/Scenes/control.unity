@@ -232,10 +232,14 @@ MonoBehaviour:
   Stage_1: 
   Stage_2: 
   Stage_3: 
-  Challenge: 
+  challenge: 
   StageSelect: 
   control: control
   opening: 
+  Rule_1: 
+  Rule_2: 
+  Rule_3: 
+  Rule_4: 
 --- !u!82 &488025460
 AudioSource:
   m_ObjectHideFlags: 0
@@ -689,7 +693,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: ef116544bb5b0624d8e08d21ae543890, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a124a0255d5dcc04aa028b0423cd6324, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
