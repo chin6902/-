@@ -17,7 +17,6 @@ public class BarrierItem : MonoBehaviour
             // Destroy the item
             Destroy(gameObject);
             PlayerAttributes.stage2 = true;
-            PlayerAttributes.CanUseBarrier = true;
 
 
             // Load the next scene

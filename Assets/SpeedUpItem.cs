@@ -17,7 +17,6 @@ public class SpeedUpItem : MonoBehaviour
             // Destroy the item
             Destroy(gameObject);
             PlayerAttributes.stage3 = true;
-            PlayerAttributes.CanSpeedUp = true;
 
 
             // Load the next scene
