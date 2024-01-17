@@ -20,7 +20,7 @@ public class SpeedUpItem : MonoBehaviour
 
 
             // Load the next scene
-            SceneManager.LoadSceneAsync(1);
+            SceneManager.LoadSceneAsync("skill3");
         }
     }
 
