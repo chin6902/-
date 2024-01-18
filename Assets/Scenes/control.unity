@@ -232,14 +232,10 @@ MonoBehaviour:
   Stage_1: 
   Stage_2: 
   Stage_3: 
-  challenge: 
+  Challenge: 
   StageSelect: 
   control: control
   opening: 
-  Rule_1: 
-  Rule_2: 
-  Rule_3: 
-  Rule_4: 
 --- !u!82 &488025460
 AudioSource:
   m_ObjectHideFlags: 0
@@ -496,7 +492,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: 0b9edb140e36f934c9267eda5762306d, type: 3}
+  m_Texture: {fileID: 2800000, guid: fccb4107c88c07d41806e66868538910, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -693,7 +689,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a124a0255d5dcc04aa028b0423cd6324, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ef116544bb5b0624d8e08d21ae543890, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
