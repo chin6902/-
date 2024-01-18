@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7635653977370159926}
   - component: {fileID: 5015636106135791122}
   - component: {fileID: 4551627005691873197}
+  - component: {fileID: 4980777979739900485}
   m_Layer: 0
   m_Name: asteroid-02
   m_TagString: Untagged
@@ -188,3 +189,24 @@ MonoBehaviour:
   target: {fileID: 0}
   speed: 5
   scenename: ending2
+--- !u!95 &4980777979739900485
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7374013420331457116}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 76749400befa1ec40836b14cb65c3dd1, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

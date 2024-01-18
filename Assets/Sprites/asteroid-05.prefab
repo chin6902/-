@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1729087781164257782}
   - component: {fileID: 721806851969872706}
   - component: {fileID: 1163246951889752355}
+  - component: {fileID: -2920305031258509016}
   m_Layer: 0
   m_Name: asteroid-05
   m_TagString: Untagged
@@ -188,3 +189,24 @@ PolygonCollider2D:
       - {x: 0.404063, y: 0.29505256}
       - {x: 0.25726604, y: 0.40479207}
   m_UseDelaunayMesh: 0
+--- !u!95 &-2920305031258509016
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8106291230838264726}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 76749400befa1ec40836b14cb65c3dd1, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
