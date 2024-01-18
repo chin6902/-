@@ -695,7 +695,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5ab1119270360849bed3e08cf5719ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnRate: 10
+  spawnRate: 8
   blackholePrefabs:
   - {fileID: 2021443609079015657, guid: 029f7ef14bb1c7b468827e5d1b1e4f38, type: 3}
   canSpawn: 1
