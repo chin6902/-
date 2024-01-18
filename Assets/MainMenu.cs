@@ -66,12 +66,18 @@ public class MainMenu : MonoBehaviour
 
     public void Rule2()
     {
-        SceneManager.LoadScene(Rule_2);
+        if (PlayerAttributes.stage1 == true)
+        {
+            SceneManager.LoadScene(Rule_2);
+        }
     }
 
     public void Rule3()
     {
-        SceneManager.LoadScene(Rule_3);
+        if (PlayerAttributes.stage2 == true)
+        {
+            SceneManager.LoadScene(Rule_3);
+        }
     }
 
     public void Challenge()
