@@ -49,8 +49,9 @@ public class GameClear : MonoBehaviour
 
     void UpdateCountdownText()
     {
-        int seconds = Mathf.FloorToInt(countdownTime % 60);
-        countdownText.text = "Time: " + seconds.ToString("D2");
+        int seconds = Mathf.FloorToInt(countdownTime);
+        int milliseconds = Mathf.FloorToInt((countdownTime - seconds) * 100); // Small modification here
+        countdownText.text = "Ë¶êŒÇ‹Ç≈Ç†Ç∆: " + seconds.ToString("D2") + "." + milliseconds.ToString("D2") + "ïb";
     }
 
     void LoadGameClearScene()
