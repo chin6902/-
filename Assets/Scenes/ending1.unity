@@ -291,10 +291,14 @@ MonoBehaviour:
   Stage_1: Stage1
   Stage_2: Stage2
   Stage_3: Stage3
-  Challenge: Challenge
+  challenge: 
   StageSelect: StageSelect
   control: 
   opening: 
+  Rule_1: 
+  Rule_2: 
+  Rule_3: 
+  Rule_4: 
 --- !u!114 &344802809
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -642,7 +646,7 @@ VideoPlayer:
   m_TargetAudioSources:
   - {fileID: 0}
   m_DirectAudioVolumes:
-  - 0.05
+  - 0.3
   m_Url: 
   m_EnabledAudioTracks: 01
   m_DirectAudioMutes: 00
