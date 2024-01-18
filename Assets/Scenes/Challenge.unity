@@ -449,7 +449,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 919547a37fb8ae142947a2dbc477c909, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnRate: 5
+  spawnRate: 4
   asteroidPrefabs:
   - {fileID: 7374013420331457116, guid: 73ed4e3973283d04fafbc6b6a705aa9d, type: 3}
   - {fileID: 7374013420331457116, guid: 73ed4e3973283d04fafbc6b6a705aa9d, type: 3}
@@ -1165,7 +1165,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 919547a37fb8ae142947a2dbc477c909, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnRate: 4
+  spawnRate: 4.5
   asteroidPrefabs:
   - {fileID: 7374013420331457116, guid: 73ed4e3973283d04fafbc6b6a705aa9d, type: 3}
   - {fileID: 6854898263257671306, guid: 0a1e2eaab6d34fd41bda203d530cc732, type: 3}
@@ -1265,7 +1265,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 919547a37fb8ae142947a2dbc477c909, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnRate: 2.5
+  spawnRate: 3.5
   asteroidPrefabs:
   - {fileID: 5468881713791194155, guid: f022e9b6393f63048b0a4f7bed0f0acd, type: 3}
   - {fileID: 7374013420331457116, guid: 73ed4e3973283d04fafbc6b6a705aa9d, type: 3}
@@ -1317,7 +1317,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 919547a37fb8ae142947a2dbc477c909, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnRate: 3.5
+  spawnRate: 5
   asteroidPrefabs:
   - {fileID: 7374013420331457116, guid: 73ed4e3973283d04fafbc6b6a705aa9d, type: 3}
   - {fileID: 8106291230838264726, guid: fa36ab523b271c94dbb8b2f5f0ad365b, type: 3}
